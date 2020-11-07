@@ -19,7 +19,7 @@ public class MissingInteger {
 
     public static void main(String[] args) {
         //tests
-        int K[] = {3,2,4,1};
+        int K[] = {3,5,4,1};
         System.out.println(findMissingInteger(K));
     }
 
