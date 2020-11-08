@@ -7,3 +7,5 @@
 *.o
 *.so
 *.bat
+.idea/
+.idea
