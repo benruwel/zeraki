@@ -2,6 +2,9 @@ import java.util.ArrayList;
 
 public class TransformString {
 
+    //BDD
+
+
     static String stringTransform(String S) {
         ArrayList<Character> tranformedArray = new ArrayList<>();
         //convert string to workable array
@@ -19,19 +22,16 @@ public class TransformString {
                 extra = n - (i-3);
                 if(extra == 3) {
                     j = (i-4) + 3;
-                    System.out.println("Do we get here at extra 3?");
                     tranformedArray.add(stringArray[j]);
                     tranformedArray.add(stringArray[j-1]);
                     tranformedArray.add(stringArray[j-2]);
                 }
                 if(extra == 2) {
-                    System.out.println("Do we get here at extra 2?");
                     j = (i-4) + 2;
                     tranformedArray.add(stringArray[j]);
                     tranformedArray.add(stringArray[j-1]);
                 }
                 if(extra == 1) {
-                    System.out.println("Do we get here at extra 1?");
                     j = (i-4) + 1;
                     tranformedArray.add(stringArray[j]);
                 }
@@ -45,8 +45,10 @@ public class TransformString {
     }
 
     public static void main(String[] args) {
-        String test = "Lorem ips?";
+        String test = "Lorem at";
+        String test2 = "Tempor ip";
         System.out.println(TransformString.stringTransform(test));
+        System.out.println(TransformString.stringTransform(test2));
     }
 }
 
