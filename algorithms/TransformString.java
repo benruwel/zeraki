@@ -9,27 +9,29 @@ public class TransformString {
         int n =  stringArray.length;
         int extra;
         int j;
-        for(int i = 3; i <= n; i=i+4) {
+        for(int i = 3; i <= n+2; i=i+4) {
             if(i < n){
                 tranformedArray.add(stringArray[i]);
                 tranformedArray.add(stringArray[i-1]);
                 tranformedArray.add(stringArray[i-2]);
                 tranformedArray.add(stringArray[i-3]);
-            } 
-            if(i > n-1) {
+            } else {
                 extra = n - (i-3);
                 if(extra == 3) {
                     j = (i-4) + 3;
+                    System.out.println("Do we get here at extra 3?");
                     tranformedArray.add(stringArray[j]);
                     tranformedArray.add(stringArray[j-1]);
                     tranformedArray.add(stringArray[j-2]);
                 }
                 if(extra == 2) {
+                    System.out.println("Do we get here at extra 2?");
                     j = (i-4) + 2;
                     tranformedArray.add(stringArray[j]);
                     tranformedArray.add(stringArray[j-1]);
                 }
                 if(extra == 1) {
+                    System.out.println("Do we get here at extra 1?");
                     j = (i-4) + 1;
                     tranformedArray.add(stringArray[j]);
                 }
@@ -43,7 +45,7 @@ public class TransformString {
     }
 
     public static void main(String[] args) {
-        String test = "Lorem ipsum";
+        String test = "Lorem ips?";
         System.out.println(TransformString.stringTransform(test));
     }
 }
