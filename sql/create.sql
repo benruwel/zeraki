@@ -1,5 +1,5 @@
 CREATE DATABASE education;
-\c education;
+use education;
 
 CREATE TABLE student(
     studentid int(11) NOT NULL AUTO_INCREMENT,
