@@ -9,7 +9,7 @@ CREATE TABLE student(
     FOREIGN KEY(course) REFERENCES course(courseid)
 );
 
-CREATE TABLE IF NOT EXISTS course(
+CREATE TABLE course(
     courseid int(11) NOT NULL AUTO_INCREMENT,
     name varchar(250),
     institution int(11),
