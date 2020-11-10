@@ -31,6 +31,18 @@ public class MissingInteger {
         }
         return missingNum;
     }
+    
+    //interesting method, iterates array once, hence its time complexity is O(n).
+    static int find_missing_int(int[] K){
+        int N = K.length + 1;//original size or array with missing number.
+        int sum = 0;
+              for (int value : K) {
+                  sum += value;
+              }
+
+        //main formulae
+        return (N*(N+1))/2 - sum;
+    }
 
     public static void main(String[] args) {
         //tests
