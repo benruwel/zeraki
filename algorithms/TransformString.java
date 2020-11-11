@@ -26,7 +26,7 @@ public class TransformString {
     // We subtract the four positions we skipped and go back to the ith index we were in the previous loop
     // We get the position by adding 1 because 'i' is in index form [0,1,2,..,n]
     // Once we get the number of extra characters we use if statements to check if there is 3,2 or 1 extra characters
-    // We then use j as our index reference and start at the (j + extra-characters)th index and add it to the arraylist
+    // We then use j as our index reference and start at the (j + "extra-characters")th index and add it to the arraylist
     // After breaking the first foor loop, we instantiate a StringBuilder object and append all the characters from transformedCharactersArray array to it
     // We return this instance as our tranformed string
 
