@@ -14,7 +14,7 @@ public class TransformString {
     // Initialize n, length of charactersArray array
     // Initialize extra, this is will hold the number of extra characters after the string is grouped in groups of 4 characters
     // Inititalize variable j, this is the position the of the extra characters in the charactersArray array
-    // Perform a for loop n+2 number of types whereby we skip 4 positions front from the ith index after each loop
+    // Perform a for loop n+2 number of times whereby we skip 4 positions front from the ith index after each loop
     // We start performing operations in the 3rd index of the charactersArray array and go backwards to avoid ArrayOutBounds exception
     // Using an if-esle statement we check if the ith index of the array is less than n
     // This together with skipping four positions, allows us to group the characters in groups of four
